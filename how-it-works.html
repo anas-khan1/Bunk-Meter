@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How It Works | Bunk Meter</title>
+    <link rel="icon" type="image/png" href="Assests/logo.png" />
+    <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('bm-theme')||'dark')}catch(e){document.documentElement.setAttribute('data-theme','dark')}</script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-row">
+        <div class="logo"><img src="Assests/logo.png" alt="Logo" class="logo-img"/><span class="logo-text"><span>Bunk</span><span>Meter</span></span></div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button id="mode-toggle" class="mode-btn" type="button" title="Toggle light/dark mode" aria-label="Toggle theme">
+          <span class="toggle-icon">&#9790;</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-content">
+        <h1>How It Works</h1>
+        <p>Bunk Meter makes attendance tracking dead simple. Here's how to use it in four easy steps.</p>
+
+        <div class="steps">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Add Your Subjects</h3>
+            <p>Click the "+ Add Subject" button on the home page. Give each subject a name — like "Mathematics" or "Physics" — so you can keep track of them separately.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>Enter Your Numbers</h3>
+            <p>For each subject, fill in four values:</p>
+            <ul>
+              <li><strong>Classes happened so far</strong> — How many classes have taken place.</li>
+              <li><strong>Classes attended</strong> — How many of those you actually went to.</li>
+              <li><strong>Total classes this semester</strong> — The expected total by end of semester.</li>
+              <li><strong>Desired attendance %</strong> — The minimum percentage you need (usually 75%).</li>
+            </ul>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>Get Instant Results</h3>
+            <p>Bunk Meter immediately calculates and shows you:</p>
+            <ul>
+              <li>Your <strong>current attendance percentage</strong></li>
+              <li>The <strong>maximum possible attendance</strong> if you attend every remaining class</li>
+              <li>How many classes you <strong>can still bunk</strong> from the remaining ones</li>
+              <li>Your <strong>overall attendance</strong> across all subjects combined</li>
+            </ul>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <h3>Plan Accordingly</h3>
+            <p>Use the insights to make smart decisions. Know exactly when you can take a day off and when you need to show up. It's that simple.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><img src="Assests/logo.png" alt="Logo" class="logo-img" /></div>
+          <p>Track your attendance, plan your bunks, and stay on target. Built for students who want to stay smart about their classes.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="javascript:void(0)">Twitter</a></li>
+            <li><a href="https://github.com/anas-khan1" target="_blank">GitHub</a></li>
+            <li><a href="mailto:contactanas56@gmail.com" target="_blank">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Bunk Meter. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function(){
+        const btn=document.getElementById('mode-toggle');
+        const icon=btn?.querySelector('.toggle-icon');
+        const theme=localStorage.getItem('bm-theme')||'dark';
+        if(icon)icon.innerHTML=theme==='light'?'\u2600':'\u263E';
+        btn?.addEventListener('click',function(){
+          const next=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
+          document.documentElement.setAttribute('data-theme',next);
+          localStorage.setItem('bm-theme',next);
+          if(icon)icon.innerHTML=next==='light'?'\u2600':'\u263E';
+        });
+      })();
+    </script>
+  </body>
+</html>

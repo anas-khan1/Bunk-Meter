@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About | Bunk Meter</title>
+    <link rel="icon" type="image/png" href="Assests/logo.png" />
+    <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('bm-theme')||'dark')}catch(e){document.documentElement.setAttribute('data-theme','dark')}</script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-row">
+        <div class="logo"><img src="Assests/logo.png" alt="Logo" class="logo-img"/><span class="logo-text"><span>Bunk</span><span>Meter</span></span></div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button id="mode-toggle" class="mode-btn" type="button" title="Toggle light/dark mode" aria-label="Toggle theme">
+          <span class="toggle-icon">&#9790;</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-content">
+        <h1>About Bunk Meter</h1>
+        <p>Bunk Meter is a simple, no-signup attendance tracking tool built for students. Whether you're in college or university, keeping track of your attendance percentage can be stressful — especially when you're trying to figure out how many classes you can safely skip without falling below the required threshold.</p>
+
+        <h2>Why We Built This</h2>
+        <p>Every student has been there: staring at a spreadsheet, manually calculating whether they can afford to miss one more lecture. We built Bunk Meter to take that mental load off your shoulders. Just enter your numbers, and we'll tell you exactly where you stand — and how many classes you can still skip.</p>
+
+        <h2>How It Helps</h2>
+        <ul>
+          <li><strong>Instant calculations</strong> — No formulas, no spreadsheets. Enter your data and get results instantly.</li>
+          <li><strong>Multiple subjects</strong> — Track attendance across all your subjects in one place.</li>
+          <li><strong>Smart insights</strong> — See your current attendance, maximum possible attendance, and how many classes you can bunk.</li>
+          <li><strong>Works everywhere</strong> — Fully responsive. Use it on your phone, tablet, or laptop.</li>
+          <li><strong>No account needed</strong> — Just open and use. No sign-ups, no data collection.</li>
+        </ul>
+
+        <h2>Our Philosophy</h2>
+        <p>We believe in keeping things simple. Bunk Meter is free, fast, and private. Your data stays in your browser — we don't store anything on any server. It's a tool built by students, for students.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><img src="Assests/logo.png" alt="Logo" class="logo-img" /></div>
+          <p>Track your attendance, plan your bunks, and stay on target. Built for students who want to stay smart about their classes.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="javascript:void(0)">Twitter</a></li>
+            <li><a href="https://github.com/anas-khan1" target="_blank">GitHub</a></li>
+            <li><a href="mailto:contactanas56@gmail.com" target="_blank">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Bunk Meter. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function(){
+        const btn=document.getElementById('mode-toggle');
+        const icon=btn?.querySelector('.toggle-icon');
+        const theme=localStorage.getItem('bm-theme')||'dark';
+        if(icon)icon.innerHTML=theme==='light'?'\u2600':'\u263E';
+        btn?.addEventListener('click',function(){
+          const next=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
+          document.documentElement.setAttribute('data-theme',next);
+          localStorage.setItem('bm-theme',next);
+          if(icon)icon.innerHTML=next==='light'?'\u2600':'\u263E';
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terms of Service | Bunk Meter</title>
+    <link rel="icon" type="image/png" href="Assests/logo.png" />
+    <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('bm-theme')||'dark')}catch(e){document.documentElement.setAttribute('data-theme','dark')}</script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-row">
+        <div class="logo"><img src="Assests/logo.png" alt="Logo" class="logo-img"/><span class="logo-text"><span>Bunk</span><span>Meter</span></span></div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button id="mode-toggle" class="mode-btn" type="button" title="Toggle light/dark mode" aria-label="Toggle theme">
+          <span class="toggle-icon">&#9790;</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-content">
+        <h1>Terms of Service</h1>
+        <p><em>Last updated: February 12, 2026</em></p>
+
+        <p>Welcome to Bunk Meter. By accessing and using this website, you agree to be bound by these Terms of Service. If you do not agree, please do not use the website.</p>
+
+        <h2>1. Acceptance of Terms</h2>
+        <p>By using Bunk Meter, you acknowledge that you have read, understood, and agree to these Terms of Service. We reserve the right to modify these terms at any time. Continued use after changes constitutes acceptance.</p>
+
+        <h2>2. Description of Service</h2>
+        <p>Bunk Meter is a free, browser-based attendance calculator tool designed for students. It allows users to input class attendance data and receive calculated results including current attendance percentage, maximum achievable attendance, and the number of classes that can be skipped while maintaining a desired attendance threshold.</p>
+
+        <h2>3. No Guarantee of Accuracy</h2>
+        <p>While we strive to provide accurate calculations, Bunk Meter is provided "as is" without warranties of any kind, either express or implied. The calculations are based on the data you input and are intended for planning purposes only. <strong>You are solely responsible for verifying your attendance with your institution.</strong> Bunk Meter shall not be held liable for any academic consequences resulting from reliance on its calculations.</p>
+
+        <h2>4. User Responsibilities</h2>
+        <ul>
+          <li>You are responsible for the accuracy of the data you enter.</li>
+          <li>You agree to use Bunk Meter for lawful purposes only.</li>
+          <li>You will not attempt to reverse engineer, modify, or exploit the website.</li>
+          <li>You will not use automated tools to scrape or overload the website.</li>
+        </ul>
+
+        <h2>5. Intellectual Property</h2>
+        <p>All content on Bunk Meter — including the design, logo, code, text, and graphics — is the intellectual property of Bunk Meter and is protected by applicable copyright and trademark laws. You may not reproduce, distribute, or create derivative works without prior written permission.</p>
+
+        <h2>6. No Data Collection</h2>
+        <p>Bunk Meter does not collect, store, or process personal data. All calculations are performed locally in your browser. See our <a href="privacy.html">Privacy Policy</a> for more details.</p>
+
+        <h2>7. Third-Party Links</h2>
+        <p>Our website may contain links to third-party websites. We are not responsible for the content, policies, or practices of any linked websites. Accessing third-party sites is at your own risk.</p>
+
+        <h2>8. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, Bunk Meter and its creators shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from your use of or inability to use the website, including but not limited to academic penalties, loss of data, or any errors in calculations.</p>
+
+        <h2>9. Availability</h2>
+        <p>We do not guarantee that Bunk Meter will be available at all times. We may modify, suspend, or discontinue the service at any time without notice.</p>
+
+        <h2>10. Governing Law</h2>
+        <p>These Terms of Service are governed by and construed in accordance with applicable laws. Any disputes arising from use of Bunk Meter shall be resolved through appropriate legal channels.</p>
+
+        <h2>11. Contact</h2>
+        <p>If you have questions about these Terms of Service, please visit our <a href="contact.html">Contact page</a>.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><img src="Assests/logo.png" alt="Logo" class="logo-img" /></div>
+          <p>Track your attendance, plan your bunks, and stay on target. Built for students who want to stay smart about their classes.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="javascript:void(0)">Twitter</a></li>
+            <li><a href="https://github.com/anas-khan1" target="_blank">GitHub</a></li>
+            <li><a href="mailto:contactanas56@gmail.com" target="_blank">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Bunk Meter. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function(){
+        const btn=document.getElementById('mode-toggle');
+        const icon=btn?.querySelector('.toggle-icon');
+        const theme=localStorage.getItem('bm-theme')||'dark';
+        if(icon)icon.innerHTML=theme==='light'?'\u2600':'\u263E';
+        btn?.addEventListener('click',function(){
+          const next=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
+          document.documentElement.setAttribute('data-theme',next);
+          localStorage.setItem('bm-theme',next);
+          if(icon)icon.innerHTML=next==='light'?'\u2600':'\u263E';
+        });
+      })();
+    </script>
+  </body>
+</html>

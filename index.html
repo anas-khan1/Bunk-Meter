@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bunk Meter | Attendance Checker</title>
+    <link rel="icon" type="image/png" href="Assests/logo.png" />
+    <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('bm-theme')||'dark')}catch(e){document.documentElement.setAttribute('data-theme','dark')}</script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-row">
+        <div class="logo"><img src="Assests/logo.png" alt="Logo" class="logo-img"/><span class="logo-text"><span>Bunk</span><span>Meter</span></span></div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button id="mode-toggle" class="mode-btn" type="button" title="Toggle light/dark mode" aria-label="Toggle theme">
+          <span class="toggle-icon">&#9790;</span>
+        </button>
+      </div>
+      <div class="tagline">
+        Track your attendance, plan your bunks, and stay on target.
+      </div>
+    </header>
+
+    <main>
+      <section class="summary">
+        <div class="summary-card">
+          <div>
+            <h2>Overall Attendance</h2>
+            <p>All subjects combined in one glance.</p>
+          </div>
+          <div class="summary-grid">
+            <div class="summary-item">
+              <span>Subjects</span>
+              <strong id="overall-subjects">1</strong>
+            </div>
+            <div class="summary-item">
+              <span>Classes Happened</span>
+              <strong id="overall-happened">0</strong>
+            </div>
+            <div class="summary-item">
+              <span>Classes Attended</span>
+              <strong id="overall-attended">0</strong>
+            </div>
+            <div class="summary-item">
+              <span>Overall %</span>
+              <strong id="overall-percent">0%</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subjects">
+        <div id="subject-list" class="subject-list"></div>
+        <br>
+        <div class="action-buttons">
+          <button id="add-subject" class="add-btn" type="button">
+            + Add Subject
+          </button>
+          <button id="download-pdf" class="add-btn pdf-btn" type="button">
+            &#128196; Download Report
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><img src="Assests/logo.png" alt="Logo" class="logo-img" /></div>
+          <p>Track your attendance, plan your bunks, and stay on target. Built for students who want to stay smart about their classes.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="javascript:void(0)">Twitter</a></li>
+            <li><a href="https://github.com/anas-khan1" target="_blank">GitHub</a></li>
+            <!-- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contactanas56@gmail.com" target="_blank">Email Us</a> -->
+            <li><a href="mailto:contactanas56@gmail.com" target="_blank">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Bunk Meter. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
