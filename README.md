@@ -99,7 +99,7 @@ Bunk Meter/
 ## 🚀 Getting Started
 
 ### Option 1: Live Demo
-Visit the live site: **[bunkmeter.in](https://anas-khan1.github.io/Bunk-Meter/)**
+Visit the live site: **[bunkmeter.netlify.app](https://bunkmeter.netlify.app/)**
 
 ### Option 2: Run Locally
 ```bash
@@ -172,7 +172,7 @@ Contributions are welcome! If you'd like to improve Bunk Meter:
 ## 📬 Contact
 
 - **Email**: [contactanas56@gmail.com](mailto:contactanas56@gmail.com)
-- **GitHub**: [anas-khan1](https://github.com/anas-khan1)
+- **GitHub**: [Bunk-Meter](https://github.com/anas-khan1/Bunk-Meter)
 
 ---
 
