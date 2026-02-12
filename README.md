@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://anas-khan1.github.io/Bunk-Meter/">
+  <a href="https://bunkmeter.netlify.app/">
     <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Bunk_Meter-10b981?style=for-the-badge" alt="Live Demo" />
   </a>
 </p>
